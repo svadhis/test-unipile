@@ -1,6 +1,7 @@
 {
   "name": "dev-test",
   "version": "0.0.0",
+  "homepage": "https://svadhis.github.io",
   "license": "MIT",
   "scripts": {
     "nx": "nx",
@@ -24,7 +25,9 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -68,6 +71,7 @@
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "4.2.0",
+    "gh-pages": "^4.0.0",
     "jest": "^28.1.1",
     "prettier": "2.0.4",
     "redux-devtools": "^3.7.0",
