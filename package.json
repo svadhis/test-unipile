@@ -25,9 +25,9 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "help": "gh-pages --help",
+    "predeploy": "nx build react-app --buildLibsFromSource --prod --baseHref=/test-unipile/",
+    "deploy": "gh-pages -d dist/apps/react-app"
   },
   "private": true,
   "dependencies": {

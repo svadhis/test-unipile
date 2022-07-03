@@ -33,7 +33,7 @@ export class Omdb {
                 break;
         }
 
-        const response = await fetch(`http://www.omdbapi.com/?${queryParameter}=${query}&apikey=${this.apiKey}`);
+        const response = await fetch(`https://www.omdbapi.com/?${queryParameter}=${query}&apikey=${this.apiKey}`);
 
         if (response.status !== 200)
             throw new Error('Il y a eu une erreur lors de la requête : ' + response.statusText);
